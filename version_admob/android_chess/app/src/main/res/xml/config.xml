@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.company.gamename" version="1.0.0">
+    <name>game</name>
+    <description>
+        A great game.
+    </description>
+    <author email="gradlecode@outlook.com" href="https://sites.google.com/view/gradlegames/">
+        Gradle Team
+    </author>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="market:*" />
+    <content src="index.html" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="SplashScreenDelay" value="20000" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+    <feature name="AdMob">
+        <param name="android-package" value="org.apache.admob.AdMob" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.dialogs.Notification" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Base64SaveImage">
+        <param name="android-package" value="org.apache.Base64SaveImage.Base64SaveImage" />
+    </feature>
+    <feature name="FirebaseAnalytics">
+        <param name="android-package" value="org.apache.firebase.FirebaseAnalyticsPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="FirebaseMessaging">
+        <param name="android-package" value="org.apache.firebase.FirebaseMessagingPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Exit">
+        <param name="android-package" value="org.apache.exit.Exit" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBillingPlugin">
+        <param name="android-package" value="org.apache.purchase.PurchasePlugin" />
+    </feature>
+</widget>

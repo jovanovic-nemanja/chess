@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "141750952393",
+    "firebase_url": "https://testcloud-fe390.firebaseio.com",
+    "project_id": "testcloud-fe390",
+    "storage_bucket": "testcloud-fe390.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141750952393:android:ea98b56066fcfbed924818",
+        "android_client_info": {
+          "package_name": "com.company.gamename"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141750952393-5ka4q8538gjinlf4esgia4jof5o9467g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaC3vgYgmKbaV5NrpG3FYrzei2U0Jc_2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141750952393-5ka4q8538gjinlf4esgia4jof5o9467g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

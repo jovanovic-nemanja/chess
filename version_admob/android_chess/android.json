@@ -1,0 +1,229 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"<YOUR_ANDROID_ADMOB_APP_ID_AS_FOUND_IN_ADMOB>\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"firebase_analytics_collection_enabled\" android:value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:name=\"by.chemerisuk.cordova.firebase.FirebaseMessagingPluginService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.firebase.messaging.default_notification_channel_id\" android:value=\"default\" />",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 2
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"name.ratson.cordova.admob.AdMob\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Base64SaveImage\"><param name=\"android-package\" value=\"org.solderzzc.Base64SaveImage.Base64SaveImage\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebaseAnalytics\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseAnalyticsPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebaseMessaging\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Exit\"><param name=\"android-package\" value=\"im.ckk.cordova.exit.Exit\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-promise-polyfill": {
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-admob-sdk": {
+      "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-plugin-admob-free": {
+      "ADMOB_APP_ID": "<YOUR_ANDROID_ADMOB_APP_ID_AS_FOUND_IN_ADMOB>",
+      "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "com.mirfalahtech.base64saveimage": {
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-plugin-firebase-analytics": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_ANALYTICS_VERSION": "17.3.+",
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "FIREBASE_MESSAGING_VERSION": "20.1.+",
+      "ANDROIDX_CORE_VERSION": "1.0.+",
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_ANALYTICS_VERSION": "17.3.+",
+      "PACKAGE_NAME": "com.company.game"
+    },
+    "cordova-plugin-exit": {
+      "PACKAGE_NAME": "com.company.gamename"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.company.gamename"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-promise-polyfill.Promise",
+      "file": "plugins/cordova-promise-polyfill/www/Promise.js",
+      "pluginId": "cordova-promise-polyfill",
+      "runs": true
+    },
+    {
+      "id": "cordova-promise-polyfill.promise.min",
+      "file": "plugins/cordova-promise-polyfill/www/promise.min.js",
+      "pluginId": "cordova-promise-polyfill"
+    },
+    {
+      "id": "cordova-plugin-admob-free.AdMob",
+      "file": "plugins/cordova-plugin-admob-free/www/admob.js",
+      "pluginId": "cordova-plugin-admob-free",
+      "clobbers": [
+        "admob",
+        "AdMob",
+        "plugins.AdMob"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification",
+      "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification_android",
+      "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
+    },
+    {
+      "id": "com.mirfalahtech.base64saveimage.Base64SaveImage",
+      "file": "plugins/com.mirfalahtech.base64saveimage/www/Base64SaveImage.js",
+      "pluginId": "com.mirfalahtech.base64saveimage",
+      "clobbers": [
+        "window.Base64SaveImage"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebase-analytics.FirebaseAnalytics",
+      "file": "plugins/cordova-plugin-firebase-analytics/www/FirebaseAnalytics.js",
+      "pluginId": "cordova-plugin-firebase-analytics",
+      "merges": [
+        "cordova.plugins.firebase.analytics"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebase-messaging.FirebaseMessaging",
+      "file": "plugins/cordova-plugin-firebase-messaging/www/FirebaseMessaging.js",
+      "pluginId": "cordova-plugin-firebase-messaging",
+      "merges": [
+        "cordova.plugins.firebase.messaging"
+      ]
+    },
+    {
+      "id": "cordova-plugin-exit.exit",
+      "file": "plugins/cordova-plugin-exit/www/exit.js",
+      "pluginId": "cordova-plugin-exit",
+      "clobbers": [
+        "cordova.plugins.exit"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-promise-polyfill": "0.0.2",
+    "cordova-admob-sdk": "0.24.1",
+    "cordova-plugin-admob-free": "0.27.0",
+    "cordova-plugin-dialogs": "2.0.2",
+    "cordova-plugin-splashscreen": "5.0.3",
+    "com.mirfalahtech.base64saveimage": "0.0.5",
+    "cordova-support-android-plugin": "1.0.2",
+    "cordova-support-google-services": "1.4.0",
+    "cordova-plugin-firebase-analytics": "4.2.0",
+    "cordova-plugin-firebase-messaging": "4.3.0",
+    "cordova-plugin-exit": "1.0.3",
+    "cordova-plugin-whitelist": "1.3.4"
+  }
+}

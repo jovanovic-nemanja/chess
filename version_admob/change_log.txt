@@ -1,0 +1,50 @@
+Gradle TEAM
+gradlecode@outlook.com
+2020 (c)
+
+Don't forget to rate us with stars, to keep new updates.
+___________________________________________________________________
+
+2020-07-20:
+===========
++ fix sounds background problem on the button menu
++ Update firebase cloud messaging
+
+
+2020-06-30:
+===========
++ Update Android Studio 4.0 compatibility
++ Update google ads-services
++ new video on the documentation : How to use push notifications
+
+
+2020-05-30:
+===========
++ Integrate background sound
++ Integrate push notifications
++ Improve the loading time of Ads
++ Documentation (new section Questions/Solutions)
++ Update to Android Studio 4.0 and resolve compatibility.
+
+
+
+05/04/2019 :
+============
+- Publish version 1 - 64Bits
+
+09/12/2019 :
+============
+
+- Changed the structure of the project
+
+- Update the code to support the API-29
+
+
+
+
+
+Contact :
+=========
+gradlecode@outlook.com
+
+ 
